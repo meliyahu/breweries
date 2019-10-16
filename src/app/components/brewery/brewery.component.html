@@ -1,16 +1,15 @@
-<div>
- <p>id: {{ brewery.id }}</p>
-  <p>name: {{ brewery.name }}</p>
-  <p>name: {{ brewery.brewery_type }}</p>
-  <p>street: {{ brewery.street }}</p>
-  <p>city: {{ brewery.city }}</p>
-  <p>state: {{ brewery.state }}</p>
-  <p>postal_code: {{ brewery.postal_code }}</p>
-  <p>country: {{ brewery.country }}</p>
-  <p>longitude: {{ brewery.longitude }}</p>
-  <p>latitude: {{ brewery.latitude }}</p>
-  <p>phone: {{ brewery.phone }}</p>
-  <p>website_url: <a href="{{ brewery.website_url }}" target="_blank">{{ brewery.website_url }}</a></p>
-  <p>updated_at: {{ brewery.updated_at }}</p>
-  <p>tag_list: {{ brewery.tag_list }}</p>
-</div>
+
+<ul class="list-group">
+  <li class="list-group-item active">{{ brewery.name }}</li>
+  <li class="list-group-item">Type: {{ brewery.brewery_type }}</li>
+  <li class="list-group-item">Street: {{ brewery.street }}</li>
+  <li class="list-group-item">City: {{ brewery.city }}</li>
+  <li class="list-group-item">State: {{ brewery.state }}</li>
+  <li class="list-group-item">Postal Code: {{ brewery.postal_code }}</li>
+  <li class="list-group-item">Country: {{ brewery.country }}</li>
+  <li class="list-group-item">Map Co-ords: lon( {{ brewery.longitude }} ), lat( {{ brewery.latitude }} )</li>
+  <li class="list-group-item">Phone: {{ brewery.phone }}</li>
+  <li class="list-group-item">Web Site: <a href="{{ brewery.website_url }}" target="_blank">{{ brewery.website_url }}</a></li>
+  <li class="list-group-item">Updated At: {{ brewery.updated_at | date}}</li>
+  <li class="list-group-item">Tag List: [{{ brewery.tag_list }}]</li>
+</ul>
