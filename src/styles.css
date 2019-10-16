@@ -11,3 +11,8 @@ nav a:hover {
 nav a.active {
     color: #039be5;
 }
+html, body {
+  height: 90%;
+  margin: 0;
+  padding: 0;
+}
