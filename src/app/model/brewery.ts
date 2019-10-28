@@ -7,10 +7,10 @@ export class Brewery {
     state: string;
     postal_code: string;
     country: string;
-    longitude: number; //"-86.774322",
-    latitude: number; //"33.524521",
-    phone: number; //"2057775456",
+    longitude: string; //number; //"-86.774322",
+    latitude: string; //number; //"33.524521",
+    phone: string; //number; //"2057775456",
     website_url: string; //"http://www.avondalebrewing.com",
-    updated_at: Date; //"2018-08-23T23:19:57.825Z",
+    updated_at: string; //"2018-08-23T23:19:57.825Z",
     tag_list: string[];
 }

@@ -15,10 +15,11 @@ export class BreweryListComponent implements OnInit {
 
   ngOnInit() {
 
-    this.brewerService.getBreweries().subscribe(data => {
-      this.breweries = data;
-      console.log(this.breweries);
-    })
+    // this.brewerService.getBreweries().subscribe(data => {
+    //   this.breweries = data;
+    //   console.log(this.breweries);
+    // })
+    this.breweries = this.brewerService.getAustralianBreweries();
   }
 
 }
